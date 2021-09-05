@@ -1,0 +1,14 @@
+
+<table border="1px" hight="270px" width="270px">
+    {% for row in key.board %}
+    <tr>
+        {% for cell in row %}
+            {% if cell%2==0 %}
+                <td class="dark" hight="30px" width="30px" bgcolor="black">{{ cell }}</td>
+            {% else %}
+                <td class="light" hight="30px" width="30px" bgcolor="white">{{ cell }}</td>
+            {% endif %}
+            {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
